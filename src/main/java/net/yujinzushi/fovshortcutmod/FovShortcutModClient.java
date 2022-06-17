@@ -14,9 +14,10 @@ public class FovShortcutModClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        KeyBinding fov_inc = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fov-shortcut-mod.fov_inc", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_PAGE_UP, "key.category.first.test"));
-        KeyBinding fov_dec = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fov-shortcut-mod.fov_dec", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_PAGE_DOWN, "key.category.first.test"));
-        KeyBinding fov_reset = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fov-shortcut-mod.fov_reset", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_HOME, "key.category.first.test"));
+
+        KeyBinding fov_inc = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fov-shortcut-mod.fov_inc", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_PAGE_UP, "key.category.fovshortcut"));
+        KeyBinding fov_dec = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fov-shortcut-mod.fov_dec", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_PAGE_DOWN, "key.category.fovshortcut"));
+        KeyBinding fov_reset = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.fov-shortcut-mod.fov_reset", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_HOME, "key.category.fovshortcut"));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (fov_inc.wasPressed()) {

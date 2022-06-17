@@ -1,5 +1,6 @@
 {
   "key.fov-shortcut-mod.fov_inc": "Increase FOV",
   "key.fov-shortcut-mod.fov_dec": "Increase FOV",
-  "key.fov-shortcut-mod.fov_reset": "Reset FOV"
+  "key.fov-shortcut-mod.fov_reset": "Reset FOV",
+  "key.category.fovshortcut": "Field of view"
 }

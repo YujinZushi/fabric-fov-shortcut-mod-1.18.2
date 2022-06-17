@@ -1,5 +1,6 @@
 {
   "key.fov-shortcut-mod.fov_inc": "Увеличить поле зрения",
   "key.fov-shortcut-mod.fov_dec": "Уменьшить поле зрения",
-  "key.fov-shortcut-mod.fov_reset": "Сбросить поле зрения"
+  "key.fov-shortcut-mod.fov_reset": "Сбросить поле зрения",
+  "key.category.fovshortcut": "Поле зрения"
 }
